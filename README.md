@@ -52,7 +52,7 @@ Para la carga de la base de datos, deben considerarse dos archivos:
 **load_data.py**: Se trata de un script python 
 que descarga de Internet el dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data), volcandolo en una tabla staging sin restricciones para luego ir cargando los registros en la tablas de negocio. 
 
-**Dockerfile.ev-data.loader**: Se trata del Dockerfile asociado para construir el contenedor. Su código es el siguiente:
+**Dockerfile.ev-data.loader**: Se trata del Dockerfile asociado al contenedor de carga de datos. Su código es el siguiente:
 
 ```bin/sh
 FROM python:3.11-slim
@@ -132,7 +132,7 @@ ORDER BY rango_promedio DESC
 LIMIT 10;
 ```
 
-**Dockerfile.reporting**:  Se trata del Dockerfile asociado para construir el contenedor para reportes. Su código es el siguiente:
+**Dockerfile.reporting**:  Se trata del Dockerfile asociado al contenedor de reportes. Su código es el siguiente:
 ```bin/sh
 FROM python:3.11-slim
 
