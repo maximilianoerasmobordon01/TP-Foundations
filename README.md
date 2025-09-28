@@ -255,7 +255,7 @@ TP-Foundations$ sh -x main.sh
 1. Habilitar el servicio de base de datos postgresql.
 2. Crear tablas en la base de datos.
 3. Leer dataset de Internet y poblar tablas.
-4. Generar reporte con las consultas de negocio planteadas.
+4. Generar reporte por pantalla a partir de las consultas de negocio planteadas.
 
 Su código asociado es el siguiente:
 ```bin/sh
