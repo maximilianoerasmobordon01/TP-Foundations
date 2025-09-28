@@ -246,10 +246,17 @@ WHEEGO ELECTRIC CARS           100.0
 
 ### Ejercicio 6 
 
-Finalmente se generó un script llamando main.sh que ejecuta todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde linea de comandos de la siguiente forma dentro de la carpeta TP-Foundations que se creará al descargar el proyecto del repositorio
+Finalmente se generó un script llamando main.sh que procesa todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde línea de comandos de la siguiente forma dentro de la carpeta TP-Foundations que se creará al descargar el proyecto del repositorio
 ```bin/sh
 TP-Foundations$ sh -x main.sh 
 ```
+#### Tareas del script (main.sh)
+
+1. Habilitar el servicio de base de datos postgresql.
+2. Crear tablas en la base de datos.
+3. Leer dataset de Internet y poblar tablas.
+4. Generar reporte con las consultas de negocio planteadas.
+
 Su código asociado es el siguiente:
 ```bin/sh
 #!/bin/bash
