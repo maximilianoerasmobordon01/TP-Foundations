@@ -83,6 +83,7 @@ Para ejecutar el contenedor se ejecutará la siguiente línea de comandos
 ```bin/sh
 docker run --network tp-foundations_my_personal_network ev-data-loader
 ```
+Donde **tp-foundations_my_personal_network** es la red empleada para la comunicación, la cual fue declarada previamente en el docker-compose como: **my_personal_network**.
 
 ### Ejercicio 5
 
@@ -163,12 +164,13 @@ Para ejecutar el contenedor se ejecutará la siguiente línea de comandos
 ```bin/sh
 docker run --network tp-foundations_my_personal_network reporting
 ```
+Donde **tp-foundations_my_personal_network** es la red empleada para la comunicación, la cual fue declarada previamente en el docker-compose como: **my_personal_network**.
 
 ### Ejercicio 6 
 
-Finalmente se generó un script llamando main.sh que ejecuta todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde linea de comandos de la siguiente forma: 
+Finalmente se generó un script llamando main.sh que ejecuta todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde linea de comandos de la siguiente forma dentro de la carpeta TP-Foundations que se creará al descargar el proyecto del repositorio
 ```bin/sh
-sh -x main.sh 
+TP-Foundations$ sh -x main.sh 
 ```
 Su código asociado es el siguiente:
 ```bin/sh
