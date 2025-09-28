@@ -83,6 +83,7 @@ Para ejecutar el contenedor se ejecutará la siguiente línea de comandos
 ```bin/sh
 docker run --network tp-foundations_my_personal_network ev-data-loader
 ```
+Donde **tp-foundations_my_personal_network** es la red empleada para la comunicación, la cual fue declarada previamente en el docker-compose como: **my_personal_network**.
 
 ### Ejercicio 5
 
@@ -163,13 +164,99 @@ Para ejecutar el contenedor se ejecutará la siguiente línea de comandos
 ```bin/sh
 docker run --network tp-foundations_my_personal_network reporting
 ```
+Donde **tp-foundations_my_personal_network** es la red empleada para la comunicación, la cual fue declarada previamente en el docker-compose como: **my_personal_network**.
+
+#### Captura salida de reporte
+
+Se adjunta captura del reporte generado por pantalla a partir de las consultas de negocio.
+
+```bin/sh
+✅ Conexión a PostgreSQL exitosa
+
+📊 Total de vehículos eléctricos registrados
+ total_vehiculos
+           15752
+
+📊 Evolución de registros por año de modelo
+ model_year  total
+       2000      6
+       2002      1
+       2003      1
+       2008     11
+       2010     12
+       2011     39
+       2012    155
+       2013    265
+       2014    322
+       2015    363
+       2016    470
+       2017    565
+       2018    689
+       2019    752
+       2020    818
+       2021   1215
+       2022   1859
+       2023   2323
+       2024   2893
+       2025   2724
+       2026    269
+
+📊 Marcas con mas registros (top 10)
+    make_name  cantidad
+        TESLA      1681
+        VOLVO      1476
+         FORD      1283
+         AUDI      1188
+    CHEVROLET      1107
+          BMW      1094
+      HYUNDAI      1023
+          KIA       968
+      PORSCHE       665
+MERCEDES-BENZ       600
+
+📊  Distribución de vehículos por condado (top 10)
+   county  total
+     King   3821
+   Pierce   3200
+  Spokane   2397
+    Clark   1424
+Snohomish    903
+   Benton    690
+   Kitsap    389
+  Whitman    386
+  Clallam    281
+ San Juan    231
+
+📊 Rango eléctrico promedio por marca (top 10)
+           make_name  rango_promedio
+               TESLA           236.9
+              JAGUAR           234.0
+            POLESTAR           233.0
+              NISSAN           122.9
+          VOLKSWAGEN           107.2
+WHEEGO ELECTRIC CARS           100.0
+               TH!NK           100.0
+           CHEVROLET            88.1
+                FIAT            85.4
+             HYUNDAI            81.8
++ ok Reporte generado.
++ echo -e \e[32m✔ Reporte generado.\e[0m
+-e ✔ Reporte generado.
+```
 
 ### Ejercicio 6 
 
-Finalmente se generó un script llamando main.sh que ejecuta todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde linea de comandos de la siguiente forma: 
+Finalmente se generó un script llamando main.sh que procesa todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde línea de comandos de la siguiente forma dentro de la carpeta TP-Foundations que se creará al descargar el proyecto del repositorio
 ```bin/sh
-sh -x main.sh 
+TP-Foundations$ sh -x main.sh 
 ```
+#### Tareas del script (main.sh)
+
+1. Habilitar el servicio de base de datos postgresql.
+2. Crear tablas en la base de datos.
+3. Leer dataset de Internet y poblar tablas.
+4. Generar reporte por pantalla a partir de las consultas de negocio planteadas.
+
 Su código asociado es el siguiente:
 ```bin/sh
 #!/bin/bash
@@ -250,81 +337,4 @@ create_tables
 load_data
 generate_reports
 
-```
-#### Captura salida de reporte
-
-Se adjunta captura del reporte generado por pantalla a partir de las consultas de negocio.
-
-```bin/sh
-✅ Conexión a PostgreSQL exitosa
-
-📊 Total de vehículos eléctricos registrados
- total_vehiculos
-           15752
-
-📊 Evolución de registros por año de modelo
- model_year  total
-       2000      6
-       2002      1
-       2003      1
-       2008     11
-       2010     12
-       2011     39
-       2012    155
-       2013    265
-       2014    322
-       2015    363
-       2016    470
-       2017    565
-       2018    689
-       2019    752
-       2020    818
-       2021   1215
-       2022   1859
-       2023   2323
-       2024   2893
-       2025   2724
-       2026    269
-
-📊 Marcas con mas registros (top 10)
-    make_name  cantidad
-        TESLA      1681
-        VOLVO      1476
-         FORD      1283
-         AUDI      1188
-    CHEVROLET      1107
-          BMW      1094
-      HYUNDAI      1023
-          KIA       968
-      PORSCHE       665
-MERCEDES-BENZ       600
-
-📊  Distribución de vehículos por condado (top 10)
-   county  total
-     King   3821
-   Pierce   3200
-  Spokane   2397
-    Clark   1424
-Snohomish    903
-   Benton    690
-   Kitsap    389
-  Whitman    386
-  Clallam    281
- San Juan    231
-
-📊 Rango eléctrico promedio por marca (top 10)
-           make_name  rango_promedio
-               TESLA           236.9
-              JAGUAR           234.0
-            POLESTAR           233.0
-              NISSAN           122.9
-          VOLKSWAGEN           107.2
-WHEEGO ELECTRIC CARS           100.0
-               TH!NK           100.0
-           CHEVROLET            88.1
-                FIAT            85.4
-             HYUNDAI            81.8
-+ ok Reporte generado.
-+ echo -e \e[32m✔ Reporte generado.\e[0m
--e ✔ Reporte generado.
 ```
