@@ -248,7 +248,7 @@ generate_reports
 ```
 #### Captura salida de reporte
 
-Se adjunta captura del reporte generado con las consultas de negocio.
+Se adjunta captura del reporte generado por pantalla a partir de las consultas de negocio.
 
 ```bin/sh
 ✅ Conexión a PostgreSQL exitosa
