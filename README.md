@@ -72,6 +72,9 @@ ENV DB_PORT=5432
 
 CMD ["python", "load_data.py"]
 ```
+**NOTA**: Si bien en el dockerfile se establecen variables de entorno que serán utilizadas por los scripts. De todas formas, el programa python (load_data.py) utiliza la función os.getenv con el valor por defecto indicado en el mismo script para cada uno de los parámetros correspondientes. Se realizó de esta manera por fines didácticos por si se requiere ejecutar el programa python fuera del dockerfile sin demasiadas complicaciones a modo de prueba rápida.
+
+
 Para construir la imagen del contenedor debe ejecutarse lo siguiente:
 ```bin/sh
 docker build -f Dockerfile.ev-data-loader -t ev-data-loader .
@@ -150,6 +153,8 @@ ENV DB_PORT=5432
 CMD ["python", "reporting.py"]
 
 ```
+**NOTA**: Si bien en el dockerfile se establecen variables de entorno que serán utilizadas por los scripts. De todas formas, el programa python (reporting.py) utiliza la función os.getenv con el valor por defecto indicado en el mismo script para cada uno de los parámetros correspondientes. Se realizó de esta manera por fines didácticos por si se requiere ejecutar el programa python fuera del dockerfile sin demasiadas complicaciones a modo de prueba rápida.
+
 Para construir la imagen del contenedor debe ejecutarse lo siguiente:
 ```bin/sh
 docker build -f Dockerfile.reporting -t reporting .
