@@ -39,7 +39,7 @@ El dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/e
 
 Consiste en la generación del presente archivo README.md. con la [descripción del dataset elegido](#descripción-del-dataset-seleccionado)  y las [preguntas de negocio](#preguntas-de-negocio).
 
-El diagrama con las tablas de negocio es el siguiente: ![Diagrama del modelo](capturas/diagrama-modelo.png)
+El diagrama confeccionado con las tablas de negocio que se poblarán a partir del dataset es el siguiente: ![Diagrama del modelo](capturas/diagrama-modelo.png)
 
 El gráfico anterior fue generado con [Mermaid Live Editor](https://mermaid.live/edit)
 
@@ -282,11 +282,8 @@ Finalmente se generó un script llamando main.sh que procesa todos los pasos sol
 ```bin/sh
 TP-Foundations$ sh -x main.sh 
 ```
-#### Entorno empleado para el desarrollo 
 
-El desarrollo y las pruebas se realizaron sobre Windows 11 (WSL: Ubuntu), empleando docker, docker-compose y Visual Studio con AmazonQ.
-
-#### Tareas del script (main.sh)
+#### Tareas del script principal (main.sh)
 
 1. Habilitar el servicio de base de datos postgresql.
 2. Crear tablas en la base de datos.
@@ -374,6 +371,11 @@ load_data
 generate_reports
 
 ```
+#### Entorno empleado para el desarrollo 
+
+El desarrollo y las pruebas se realizaron sobre Windows 11 (WSL: Ubuntu), empleando docker, docker-compose, Visual Studio con AmazonQ y eventualmente búsquedas por Internet de la información
+necesaria para construir la aplicación.
+
 ## Dependencias utilizadas por los scripts python
 
 Se encuentran presentes dentro del archivo **requirements.txt**
