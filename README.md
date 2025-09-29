@@ -77,6 +77,10 @@ Para este punto se generaron dos archivos:
 ```bin/sh
 sh -x runsql.sh create_tables.sql
 ```
+Para verificar resultados y ejecutar pruebas sobre la BD se empleó [PGAdmin 4](https://www.pgadmin.org/download/pgadmin-4-windows/). Se adjunta una captura en donde se visualizan las tablas creadas.
+
+![Tablas en db](capturas/tablas-en-db.png)
+
 ### Ejercicio 4
 
 Para la carga de la base de datos, deben considerarse dos archivos:
