@@ -39,7 +39,7 @@ El dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/e
 
 Consiste en la generación del presente archivo README.md. con la [descripción del dataset elegido](#descripción-del-dataset-seleccionado)  y las [preguntas de negocio](#preguntas-de-negocio).
 
-El diagrama con las tablas de negocio es el siguiente: ![Diagrama del modelo](capturas/diagrama-modelo.png)
+El diagrama confeccionado con las tablas de negocio que se poblarán a partir del dataset es el siguiente: ![Diagrama del modelo](capturas/diagrama-modelo.png)
 
 El gráfico anterior fue generado con [Mermaid Live Editor](https://mermaid.live/edit)
 
