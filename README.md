@@ -41,7 +41,7 @@ Consiste en la generación del presente archivo README.md. con la [descripción 
 
 El diagrama con las tablas de negocio es el siguiente: ![Diagrama del modelo](capturas/diagrama-modelo.png)
 
-El gráfico anterior fue generado con [Mermaid Live Editor] (https://mermaid.live/edit)
+El gráfico anterior fue generado con [Mermaid Live Editor](https://mermaid.live/edit)
 
 ### Ejercicio 2
 
@@ -275,7 +275,7 @@ TP-Foundations$ sh -x main.sh
 ```
 #### Entorno empleado para el desarrollo 
 
-El desarrollo y las pruebas se realizaron sobre Windows 11 (WSL: Ubuntu), empleando docker y Visual Studio con AmazonQ.
+El desarrollo y las pruebas se realizaron sobre Windows 11 (WSL: Ubuntu), empleando docker, docker-compose y Visual Studio con AmazonQ.
 
 #### Tareas del script (main.sh)
 
