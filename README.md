@@ -287,7 +287,7 @@ Finalmente se generó un script llamando main.sh que procesa todos los pasos sol
 TP-Foundations$ sh -x main.sh 
 ```
 
-#### Tareas del script principal (main.sh)
+#### Tareas del script principal main.sh
 
 1. Habilitar el servicio de base de datos postgresql.
 2. Crear tablas en la base de datos.
