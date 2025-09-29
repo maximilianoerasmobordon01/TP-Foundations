@@ -2,6 +2,25 @@
 
 **Alumno:** Maximiliano Bordón 
 
+## Tabla de Contenidos
+- [Descripción del dataset seleccionado](#descripcion-del-dataset-seleccionado)
+- [Preguntas de Negocio](#preguntas-de-negocio)
+- [Resolución de ejercicios y ejecución end2end](#resolucion-de-ejercicios-y-ejecucion-end2end)
+  - [Ejercicio 1](#ejercicio-1)
+  - [Ejercicio 2](#ejercicio-2)
+  - [Ejercicio 3](#ejercicio-3)
+  - [Ejercicio 4](#ejercicio-4)
+  - [Ejercicio 5](#ejercicio-5)
+    - [Total de vehículos eléctricos registrados](#total-de-vehiculos-electricos-registrados)
+    - [Evolución de registros por año de modelo](#evolucion-de-registros-por-ano-de-modelo)
+    - [Marcas con más registros (top 10)](#marcas-con-mas-registros-top-10)
+    - [Distribución de vehículos por condado (top-10)](#distribucion-de-vehiculos-por-condado-top-10)
+    - [Rango eléctrico promedio por marca (top 10)](#rango-electrico-promedio-por-marca-top-10)
+    - [Captura salida de reporte](#captura-salida-de-reporte)
+  - [Ejercicio 6](#ejercicio-6)
+    - [Tareas del script (main.sh)](#tareas-del-script-mainsh)
+- [Dependencias utilizadas por los scripts python](#dependencias-utilizadas-por-los-scripts-python)
+
 ## Descripción del dataset seleccionado
 
 El dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data). del Estado de Washington proporciona información detallada sobre los vehículos eléctricos registrados en el estado, específicamente sobre los vehículos eléctricos de batería (BEVs) y los híbridos enchufables (PHEVs). Estos datos son gestionados por el Departamento de Licencias del Estado de Washington (DOL) y se actualizan periódicamente para reflejar la adopción de vehículos eléctricos en la región.  
@@ -18,7 +37,7 @@ El dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/e
 
 ### Ejercicio 1
 
-Consiste en la generación del presente archivo README.md.
+Consiste en la generación del presente archivo README.md. con la [descripción del dataset elegido]  y las preguntas de negocio.
 
 ### Ejercicio 2
 
