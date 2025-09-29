@@ -338,3 +338,12 @@ load_data
 generate_reports
 
 ```
+## Dependencias utilizadas por los scripts python
+
+Se encuentran presentes dentro del archivo **requirements.txt**
+
+| Dependencia      | Utilidad |
+|------------------|-------------|
+| pandas           | En nuestro proyecto permite manipular datos, al momento de leerlos del  dataset que se encuentra en Internet.     |
+| sqlalchemy       | Para poder interactuar con nuestra base de datos que posee infomación de vehículos eléctricos.  | 
+| psycopg2-binary  | Es un driver de PostgreSQL para python , lo que permite que python y las anteriores dependencias puedan establecer un diálogo con la base de datos PostgreSQL.   |
