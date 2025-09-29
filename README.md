@@ -18,7 +18,7 @@
     - [Rango eléctrico promedio por marca (top 10)](#rango-eléctrico-promedio-por-marca-top-10)
     - [Captura salida de reporte](#captura-salida-de-reporte)
   - [Ejercicio 6](#ejercicio-6)
-    - [Tareas del script principal main.sh](#tareas-del-script-principal-main.sh)
+    - [Tareas del script principal main.sh](#tareas-del-script-principal-mainsh)
 - [Dependencias utilizadas por los scripts python](#dependencias-utilizadas-por-los-scripts-python)
 
 ## Descripción del dataset seleccionado
