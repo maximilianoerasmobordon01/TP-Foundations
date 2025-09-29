@@ -282,11 +282,8 @@ Finalmente se generó un script llamando main.sh que procesa todos los pasos sol
 ```bin/sh
 TP-Foundations$ sh -x main.sh 
 ```
-#### Entorno empleado para el desarrollo 
 
-El desarrollo y las pruebas se realizaron sobre Windows 11 (WSL: Ubuntu), empleando docker, docker-compose y Visual Studio con AmazonQ.
-
-#### Tareas del script (main.sh)
+#### Tareas del script principal (main.sh)
 
 1. Habilitar el servicio de base de datos postgresql.
 2. Crear tablas en la base de datos.
@@ -374,6 +371,11 @@ load_data
 generate_reports
 
 ```
+#### Entorno empleado para el desarrollo 
+
+El desarrollo y las pruebas se realizaron sobre Windows 11 (WSL: Ubuntu), empleando docker, docker-compose, Visual Studio con AmazonQ y eventualmente búsquedas por Internet de la información
+necesaria para construir la aplicación.
+
 ## Dependencias utilizadas por los scripts python
 
 Se encuentran presentes dentro del archivo **requirements.txt**
