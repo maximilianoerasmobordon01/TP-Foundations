@@ -43,6 +43,15 @@ El diagrama con las tablas de negocio es el siguiente: ![Diagrama del modelo](ca
 
 El gráfico anterior fue generado con [Mermaid Live Editor](https://mermaid.live/edit)
 
+A continuación se describen cada una de las tablas del negocio. 
+
+| Nombre de la tabla | Significado | 
+|--------------------|--------------|
+| makes              | Tabla de Fabricantes. | 
+| models             | Tabla de modelos de vehículos. | 
+| regions            | Tabla de regiones (ciudad, condado, ZIP, estado).| 
+| vehicle_types      | Tabla de tipos de vehículos. |
+| electric_vehicles  | Tabla principal de vehículos electrónicos.|
 ### Ejercicio 2
 
 Se generó un archivo docker-compose.yaml en donde se especifica el servicio de base datos postgresql con sus datos asociados.
