@@ -3,7 +3,7 @@
 **Alumno:** Maximiliano Bordón 
 
 ## Tabla de Contenidos
-- [Descripción del dataset seleccionado](#descripcion-del-dataset-seleccionado)
+- [Descripción del dataset seleccionado](#descripción-del-dataset-seleccionado)
 - [Preguntas de Negocio](#preguntas-de-negocio)
 - [Resolución de ejercicios y ejecución end2end](#resolucion-de-ejercicios-y-ejecucion-end2end)
   - [Ejercicio 1](#ejercicio-1)
