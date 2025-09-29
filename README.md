@@ -39,6 +39,8 @@ El dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/e
 
 Consiste en la generación del presente archivo README.md. con la [descripción del dataset elegido](#descripción-del-dataset-seleccionado)  y las [preguntas de negocio](#preguntas-de-negocio).
 
+El diagrama con las tablas es el siguiente: ![Diagrama del modelo](captura/diagrama-modelo.png)
+
 ### Ejercicio 2
 
 Se generó un archivo docker-compose.yaml en donde se especifica el servicio de base datos postgresql con sus datos asociados.
