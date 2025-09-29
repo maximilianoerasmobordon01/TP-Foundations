@@ -77,16 +77,16 @@ Para este punto se generaron dos archivos:
 ```bin/sh
 sh -x runsql.sh create_tables.sql
 ```
-Para verificar resultados y ejecutar pruebas sobre la BD se empleó [PGAdmin 4](https://www.pgadmin.org/download/pgadmin-4-windows/). Se adjunta una captura en donde se visualizan las tablas creadas.
+Para verificar resultados y ejecutar pruebas sobre la BD se empleó [PGAdmin 4](https://www.pgadmin.org/download/pgadmin-4-windows/). Se adjunta una captura en donde se visualizan las tablas creadas ![Tablas en db](capturas/tablas-en-db.png)
 
-![Tablas en db](capturas/tablas-en-db.png)
+
 
 ### Ejercicio 4
 
 Para la carga de la base de datos, deben considerarse dos archivos:
 
 **load_data.py**: Se trata de un script python 
-que descarga de Internet el dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data), volcandolo en una tabla staging sin restricciones para luego ir cargando los registros en la tablas de negocio. 
+que descarga de Internet el dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data), volcándo la información en una tabla staging sin restricciones **(StagingEV)** para luego ir cargando los registros en la tablas de negocio correpondientes.
 
 **Dockerfile.ev-data.loader**: Se trata del Dockerfile asociado al contenedor de carga de datos. Su código es el siguiente:
 
