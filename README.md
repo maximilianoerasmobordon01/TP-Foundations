@@ -37,7 +37,7 @@ El dataset [Electric Vehicle Population Data](https://catalog.data.gov/dataset/e
 
 ### Ejercicio 1
 
-Consiste en la generación del presente archivo README.md. con la [descripción del dataset elegido]  y las preguntas de negocio.
+Consiste en la generación del presente archivo README.md. con la [descripción del dataset elegido](#descripción-del-dataset-seleccionado)  y las [preguntas de negocio](#preguntas-de-negocio).
 
 ### Ejercicio 2
 
