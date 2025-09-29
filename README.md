@@ -278,7 +278,7 @@ WHEEGO ELECTRIC CARS           100.0
 
 ### Ejercicio 6 
 
-Finalmente se generó un script llamando main.sh que procesa todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde línea de comandos de la siguiente forma dentro de la carpeta TP-Foundations que se creará al descargar el proyecto del repositorio, posicionándose sobre la rama main
+Finalmente se generó un script llamando main.sh que procesa todos los pasos solicitados en el TP de forma idempotente. El mismo debe ejecutarse desde línea de comandos de la siguiente forma dentro de la carpeta TP-Foundations que se creará al descargar el proyecto del repositorio, posicionándose sobre la rama **main**.
 ```bin/sh
 TP-Foundations$ sh -x main.sh 
 ```
