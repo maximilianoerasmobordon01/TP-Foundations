@@ -12,7 +12,7 @@
   - [Ejercicio 4](#ejercicio-4)
   - [Ejercicio 5](#ejercicio-5)
     - [Total de vehículos eléctricos registrados](#total-de-vehículos-eléctricos-registrados)
-    - [Evolución de registros por año de modelo](#evolución-de-registros-por-ano-de-modelo)
+    - [Evolución de registros por año de modelo](#evolución-de-registros-por-año-de-modelo)
     - [Marcas con más registros (top 10)](#marcas-con-más-registros-top-10)
     - [Distribución de vehículos por condado (top-10)](#distribución-de-vehículos-por-condado-top-10)
     - [Rango eléctrico promedio por marca (top 10)](#rango-eléctrico-promedio-por-marca-top-10)
